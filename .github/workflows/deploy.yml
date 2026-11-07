@@ -37,3 +37,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # the site carries ~500 MB of media, so give Pages longer to sync
+          timeout: 1800000
+          error_count: 25

@@ -451,7 +451,7 @@ $aboutContent = @'
 <ul>
 <li><b>2026</b> &mdash; Nostalgia es Feedback expandido. Artlab, Buenos Aires, Argentina.</li>
 <li><b>2025</b> &mdash; Nostalgia Is The Extended Feedback. SOMA Berlin.</li>
-<li><b>2023</b> &mdash; "SIMULACI&Oacute;N DE LO ESENCIAL", "AVISPISH", "LA INFINITA" &mdash; "DESBORDE" Individual Exhibition, Centro NAVE, Santiago de Chile, Chile.</li>
+<li><b>2023</b> &mdash; "SIMULACI&Oacute;N DE LO ESENCIAL", "AVISPISH", "LA INFINITA" &mdash; "DESBORDE", Centro NAVE, Santiago de Chile, Chile.</li>
 </ul>
 <h4 class="acc-group">Group Shows</h4>
 <ul>
@@ -497,6 +497,7 @@ $aboutContent = @'
 </ul></div></details>
 <details class="accordion"><summary class="acc-head"><span class="acc-title">Press</span><span class="chev">&#9662;</span></summary><div class="acc-body"><ul>
 <li><b>Kill Screen</b> &mdash; <a href="https://www.killscreen.com/joaquina-salgado-hides-a-score-inside-luminous-eggs/" target="_blank" rel="noopener">Joaquina Salgado hides a score inside luminous eggs</a>.</li>
+<li><b>K&ouml;rber-Stiftung</b> (eCommemoration) &mdash; <a href="https://koerber-stiftung.de/projekte/ecommemoration/every-time-we-remember-we-remember-differently-interview-with-joaquina-salgado/" target="_blank" rel="noopener">Every time we remember, we remember differently</a>.</li>
 <li><b>Refresh Art Magazine</b> &mdash; <a href="https://www.refresh.art/reviews/joaquina-salgado/" target="_blank" rel="noopener">Digital Specters Against Homogenization</a>.</li>
 <li><b>AntiMateria</b> &mdash; <a href="https://anti-materia.org/eyecandy-1/2025/12/8/semana-4871-nostalgia-is-the-extended-feedback" target="_blank" rel="noopener">Nostalgia is the Extended Feedback</a>.</li>
 <li><b>MOCA</b>, by Maxwell Cohen &mdash; <a href="https://medium.com/@museumofcryptoart/joaquina-salgado-searches-for-sincerity-and-so-do-you-4696fdaae9c0" target="_blank" rel="noopener">Joaquina Salgado Searches for Sincerity, And So Do You!</a></li>

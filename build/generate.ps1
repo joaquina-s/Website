@@ -455,13 +455,13 @@ $aboutContent = @'
 </ul>
 <h4 class="acc-group">Group Shows</h4>
 <ul>
-<li><b>2026</b> &mdash; Lust*Art: Space Eggs. Kasko, Kunsttage Basel, Switzerland.</li>
-<li><b>2026</b> &mdash; Diver. Collegium Hungaricum Berlin, Germany.</li>
+<li><b>2026</b> &mdash; <a href="https://kunsttagebasel.ch/ausstellungen/lust-art-space-eggs" target="_blank" rel="noopener">Lust*Art: Space Eggs</a>. Kasko, Kunsttage Basel, Switzerland.</li>
+<li><b>2026</b> &mdash; <a href="https://culture.hu/de/berlin/veranstaltungen/ausstellungseroffnung:-brave-new" target="_blank" rel="noopener">Diver</a>. Collegium Hungaricum Berlin, Germany.</li>
 <li><b>2026</b> &mdash; Cyber Eternity. Nite Lite, Buenos Aires, Argentina.</li>
 <li><b>2026</b> &mdash; Niebla Intramundos. MUTEK.AR, Planetario de la Ciudad de Buenos Aires, Argentina.</li>
-<li><b>2026</b> &mdash; PERFORMA 2026: Festival Internacional de Artes Mediales, Valpara&iacute;so, Chile.</li>
-<li><b>2026</b> &mdash; Latitudes Inmersivas. Planetario, Santiago, Chile.</li>
-<li><b>2026</b> &mdash; One More Sim. Clutch, Berlin, Germany.</li>
+<li><b>2026</b> &mdash; <a href="https://www.mediales.art/articulos/performa-2026" target="_blank" rel="noopener">PERFORMA 2026: Festival Internacional de Artes Mediales</a>, Valpara&iacute;so, Chile.</li>
+<li><b>2026</b> &mdash; <a href="https://uchile.cl/agenda/244703/visionado-latitudes-inmersivas-en-planetario-huechuraba" target="_blank" rel="noopener">Latitudes Inmersivas</a>. Planetario, Santiago, Chile.</li>
+<li><b>2026</b> &mdash; <a href="https://www.killscreen.com/joaquina-salgado-shows-memory-simulator-one-more-sim/" target="_blank" rel="noopener">One More Sim</a>. Clutch, Berlin, Germany.</li>
 <li><b>2026</b> &mdash; "N.I.T.E.F" shortfilm at Azur Gallery, Berlinale. Berlin, Germany.</li>
 <li><b>2026</b> &mdash; One More Sim. Vienna Digital Cultures. Vienna, Austria.</li>
 <li><b>2026</b> &mdash; Diver &mdash; Exhibition at Azur Gallery. Berlin, Germany.</li>

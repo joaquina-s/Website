@@ -1167,6 +1167,34 @@ html:has(body.content-page) { overflow-x: hidden; }   /* clip any full-bleed ove
 	transform-origin: center;
 }
 
+/* Avispish: press block pulled to the top of the article, enlarged */
+.avispish-press {
+	margin: 0 0 2.6rem;
+	padding: 0 0 1.8rem;
+	border-bottom: 1px solid rgba(15, 23, 42, 0.14);
+	font-size: 1.6rem;
+	line-height: 1.65;
+}
+.avispish-press .ap-label {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	color: var(--ink-soft);
+	margin-bottom: 0.7rem;
+}
+.avispish-press a {
+	display: block;
+	color: var(--accent-nav);
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	width: fit-content;
+	margin: 0.25rem 0;
+	transition: border-color 0.2s ease;
+}
+.avispish-press a:hover { border-bottom-color: currentColor; }
+
 /* cleaner, coherent image grid on project pages */
 .column-unit img,
 .column-unit video,

@@ -444,7 +444,7 @@ $aboutContent = @'
 <p>Through motion capture, game engines, and custom interfaces, Salgado develops speculative ecosystems that illuminate hidden entanglements between humans, machines, and living systems. Her practice explores technology as both a tool of control and a medium for intimacy and interconnection, seeking to explore how technology might enable more equitable and interconnected futures.</p>
 <p>Recent projects include DERIVA (Pro Helvetia, Zurich), avispish (CCK, Buenos Aires), and Vienna Digital Cultures (2026). Her solo exhibition Nostalgia is the Extended Feedback opened at SOMA Berlin in December 2025. She has presented work at MUTEK (Buenos Aires/Montreal), Berlin Art Week, and the APAP7 Triennial in Korea.</p>
 </div>
-<p class="about-contact">mandame un email (&#728;&#840; &#7509; &#728;&#840;&#9825;)&#730;&#3664;*&#735;&#9825; <a href="mailto:hola@joaquinasalgado.com">hola@joaquinasalgado.com</a> &#8333;&#758; &#8226;. &#8226; &#9285;&#8334;&#4304; &#9825;</p>
+<p class="about-contact">I'm always online and ready to chat: (&#728;&#840; &#7509; &#728;&#840;&#9825;)&#730;&#3664;*&#735;&#9825; <a href="mailto:hola@joaquinasalgado.com">hola@joaquinasalgado.com</a> &#8333;&#758; &#8226;. &#8226; &#9285;&#8334;&#4304; &#9825;</p>
 <div class="acc-list">
 <details class="accordion"><summary class="acc-head"><span class="acc-title">Exhibitions</span><span class="chev">&#9662;</span></summary><div class="acc-body">
 <h4 class="acc-group">Solo Shows</h4>
@@ -538,6 +538,15 @@ Get-ChildItem "$srcDir\*.json" | ForEach-Object {
 	}
 	if ($purl -eq "avispish") {
 		$raw = $raw -replace '<h2>What does it mean to exist in a world where every gesture can be turned into data\?', '<h2 class="deformed">What does it mean to exist in a world where every gesture can be turned into data?'
+		# move the trailing PRESS block to the top of the article, enlarge it, fix the broken Refresh link
+		$pi = $raw.IndexOf('>PRESS:')
+		if ($pi -ge 0) {
+			$spanStart = $raw.LastIndexOf('<span class="caption">', $pi)
+			if ($spanStart -ge 0) { $raw = $raw.Substring(0, $spanStart).TrimEnd() }
+		}
+		$apPress = '<div class="avispish-press"><span class="ap-label">Press</span><a href="https://www.refresh.art/reviews/joaquina-salgado/" target="_blank" rel="noopener">Refresh Art Magazine &mdash; Digital Specters Against Homogenization</a><a href="https://anti-materia.org/eyecandy-1/2025/12/8/semana-4871-nostalgia-is-the-extended-feedback" target="_blank" rel="noopener">AntiMateria &mdash; Nostalgia is the Extended Feedback</a></div>'
+		$hrA = $raw.IndexOf('<hr')
+		if ($hrA -ge 0) { $endA = $raw.IndexOf('>', $hrA); $raw = $raw.Substring(0, $endA + 1) + $apPress + $raw.Substring($endA + 1) }
 	}
 	if ($purl -eq "diver") {
 		# new top image = diver1; body images = diver2/3/4; old top image moves to the bottom

@@ -449,11 +449,19 @@ $aboutContent = @'
 <details class="accordion"><summary class="acc-head"><span class="acc-title">Exhibitions</span><span class="chev">&#9662;</span></summary><div class="acc-body">
 <h4 class="acc-group">Solo Shows</h4>
 <ul>
-<li><b>2025</b> &mdash; Nostalgia Is The Extended Feedback. Solo Show. SOMA Berlin.</li>
+<li><b>2026</b> &mdash; Nostalgia es Feedback expandido. Artlab, Buenos Aires, Argentina.</li>
+<li><b>2025</b> &mdash; Nostalgia Is The Extended Feedback. SOMA Berlin.</li>
 <li><b>2023</b> &mdash; "SIMULACI&Oacute;N DE LO ESENCIAL", "AVISPISH", "LA INFINITA" &mdash; "DESBORDE" Individual Exhibition, Centro NAVE, Santiago de Chile, Chile.</li>
 </ul>
 <h4 class="acc-group">Group Shows</h4>
 <ul>
+<li><b>2026</b> &mdash; Lust*Art: Space Eggs. Kasko, Kunsttage Basel, Switzerland.</li>
+<li><b>2026</b> &mdash; Diver. Collegium Hungaricum Berlin, Germany.</li>
+<li><b>2026</b> &mdash; Cyber Eternity. Nite Lite, Buenos Aires, Argentina.</li>
+<li><b>2026</b> &mdash; Niebla Intramundos. MUTEK.AR, Planetario de la Ciudad de Buenos Aires, Argentina.</li>
+<li><b>2026</b> &mdash; PERFORMA 2026: Festival Internacional de Artes Mediales, Valpara&iacute;so, Chile.</li>
+<li><b>2026</b> &mdash; Latitudes Inmersivas. Planetario, Santiago, Chile.</li>
+<li><b>2026</b> &mdash; One More Sim. Clutch, Berlin, Germany.</li>
 <li><b>2026</b> &mdash; "N.I.T.E.F" shortfilm at Azur Gallery, Berlinale. Berlin, Germany.</li>
 <li><b>2026</b> &mdash; One More Sim. Vienna Digital Cultures. Vienna, Austria.</li>
 <li><b>2026</b> &mdash; Diver &mdash; Exhibition at Azur Gallery. Berlin, Germany.</li>
@@ -488,6 +496,7 @@ $aboutContent = @'
 <li><b>2026&ndash;</b> Aegean Film Festival VR and Immersive programmer. Patmos. Greece.</li>
 </ul></div></details>
 <details class="accordion"><summary class="acc-head"><span class="acc-title">Press</span><span class="chev">&#9662;</span></summary><div class="acc-body"><ul>
+<li><b>Kill Screen</b> &mdash; <a href="https://www.killscreen.com/joaquina-salgado-hides-a-score-inside-luminous-eggs/" target="_blank" rel="noopener">Joaquina Salgado hides a score inside luminous eggs</a>.</li>
 <li><b>Refresh Art Magazine</b> &mdash; <a href="https://www.refresh.art/reviews/joaquina-salgado/" target="_blank" rel="noopener">Digital Specters Against Homogenization</a>.</li>
 <li><b>AntiMateria</b> &mdash; <a href="https://anti-materia.org/eyecandy-1/2025/12/8/semana-4871-nostalgia-is-the-extended-feedback" target="_blank" rel="noopener">Nostalgia is the Extended Feedback</a>.</li>
 <li><b>MOCA</b>, by Maxwell Cohen &mdash; <a href="https://medium.com/@museumofcryptoart/joaquina-salgado-searches-for-sincerity-and-so-do-you-4696fdaae9c0" target="_blank" rel="noopener">Joaquina Salgado Searches for Sincerity, And So Do You!</a></li>

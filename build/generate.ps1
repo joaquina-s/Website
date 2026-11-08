@@ -47,7 +47,7 @@ $titDiver = "Diver:Unidad-" + [char]0x0394
 
 $homeCategories = @(
 	@{ name = "Games"; items = @(
-		@{ title = "Nostalgia is the Extended Feedback"; href = "nitef"; medium = "Video game"; year = "2025"; img = "assets/media/A2735789747829222329589952003931.png"; desc = "A slow, atmospheric videogame suspended between dream and digital residue, a flooded world of luminous eggs and half-remembered interfaces." },
+		@{ title = "Nostalgia is the Extended Feedback"; href = "nitef"; medium = "Video game"; year = "2025"; img = "assets/img/NitefMutek1.png"; desc = "A slow, atmospheric videogame suspended between dream and digital residue, a flooded world of luminous eggs and half-remembered interfaces." },
 		@{ title = "One More Sim"; href = "one-more-sim"; medium = "Web Videogame"; year = "2026"; img = "assets/media/U3000570250880500013001455812443.png"; desc = "A web-based memory simulator of nine porous worlds where memories become simulations, commissioned for Vienna Digital Cultures 2026." },
 		@{ title = "Artist Rejector"; href = "artist-rejector"; medium = "Email Sim"; year = "2026"; img = "assets/img/ss.png"; desc = "A little catharsis email simulator fed from real rejection letters, on open calls and institutional silence." },
 		@{ title = "To the Best of Our Knowledge"; href = "to-the-best-of-our-knowledge"; medium = "Video game"; year = "2025"; img = "assets/media/G2293209650152453056179497189211.png"; desc = "An artistic exploration of video games in conjunction with quantum computing theories." },

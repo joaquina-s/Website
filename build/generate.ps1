@@ -533,8 +533,40 @@ Get-ChildItem "$srcDir\*.json" | ForEach-Object {
 	$raw = $pg.content
 	if ($purl -eq "about-1") { $raw = $aboutContent }
 	if ($purl -eq "nitef") {
-		# stretched / deformed treatment for this line
-		$raw = $raw -replace '<h2>Where is the sea in this cybernetic world\?', '<h2 class="deformed">Where is the sea in this cybernetic world?'
+		# Fully hand-authored layout (reorganised Nov 2026). Leading <hr /> is
+		# stripped by the hero logic below, which then prepends the heat-reveal hero.
+		$raw = @'
+<hr />
+<div style="text-align: center"><h2 class="deformed">Where is the sea in this cybernetic world?</h2></div><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit" style="--span:24"><img class="media-item zoomable" src="assets/img/NitefMutek1.png" alt="" loading="lazy"></div><div class="column-unit" style="--span:76"><img class="media-item zoomable" src="assets/img/PLAY%20CIRO-6.jpg" alt="" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+<i>Nostalgia Is the Extended Feedback</i> unfolds as a slow, atmospheric videogame, suspended between dream and digital residue. The world they move through feels half-remembered: waterlogged ruins, luminous stones and dead machines.<br />
+<br />
+As you enter, a character awakens in a flooded landscape that teeters between digital ruin and emotional archive. Across this submerged terrain lie luminous eggs ; latent objects holding fragments of song, ghostly residues of time.<br />
+<br />
+The gamified piece stands against the flattening logic of dominant web, against the relentless homogenization of visual culture, offering instead a counter-narrative; one where aesthetics refuse to be efficient and linear, and instead fold and unfold like tides. <span style="--font-scale: 0.65;"><a href="https://www.refresh.art/reviews/joaquina-salgado/" target="_blank" rel="noopener">(Refresh magazine article)</a></span>
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/PLAY%20CIRO-4.jpg" alt="" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+Water here is both medium and metaphor. It moves with a poetry of time-lag and recollection: deeper currents that rupture linear progression, and dreamlike reflections that feel handwritten. The installation borrows from early online aesthetics interfaces that feel out of time, low-poly textures alongside ambient soundscapes, crafting an environment that is equally familiar and intangible.<br />
+<br />
+This is a space where nostalgia doesn&#8217;t signal longing for the past, but a search for an origin ; a memory before memory, an emotional terrain between analog intuition and digital sediment. Each world the player traverses , underwater ruins, rocky monuments, luminous nests, feels less like a &#8220;level&#8221; and more like an ocean of ghosts shaped by collective longing and the collapsed promise of the internet.<br />
+<br />
+The work invites visitors to drift inside the game, to stay with its shifting rhythms and let perception bend with the environment.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/PLAY%20CIRO-9.jpg" alt="" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/PLAY%20CIRO-12.jpg" alt="" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+In the closing chapter of SOMA Art Berlin&#8217;s Becoming Future series, Joaquina Salgado conjures an immersive world that feels like a memory you almost remember. <i>Nostalgia Is the Extended Feedback</i> is not a narrative game with a tidy plot ; it&#8217;s a slow-game installation where liquid worlds and dreamcore atmospheres become terrain for exploration, drift, and subjective return.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/media/A2735789747829222329589952003931.png" alt="" loading="lazy"></div></div><br /><hr />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><span style="--font-scale: 0.74;">Curated by Nabi Nara.<br />
+<br />
+<b>Collaborators:</b><br />Programming: Ali Salama (iMac), Gungor Kocak (LCD Screens &amp; Trackball).<br />Stainless Steel Work: Lena Becerra.<br />Sound: Tatiana Heuman (QOA).<br />Voices: Tatiana Heuman, Bianca Panozzo, Florencia Ondona.<br />Graphic Design: Carolina Ovando, Maja Usak.</span></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/SLIDE1_joaquina_post_soma_01.jpg" alt="" loading="lazy"></div></div><br /><hr />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><video autoplay="" class="embed-video" loop="" muted="" playsinline="" src="assets/media/Y2735819552621003847660398559067.mp4" style="width: 100%; height: auto; display: block;"></video><small><span class="caption">Installation GamePlay</span></small></div><div class="column-unit"><video autoplay="" class="embed-video" loop="" muted="" playsinline="" src="assets/media/E2735800738141087028708871094107.mp4" style="width: 100%; height: auto; display: block;"></video></div></div><br /><hr />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/media/Z2735794226532662729605698404187.png" alt="" loading="lazy"><small><span class="caption">Install Shot at SOMA Berlin</span></small></div><div class="column-unit"><img class="media-item zoomable" src="assets/media/I2735789747755435353295113797467.png" alt="" loading="lazy"><small><span class="caption">Custom interface designed for the Videogame</span></small></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/media/K2735794226514215985531988852571.png" alt="" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/media/G2735795563774034120958514151259.png" alt="" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/media/U2735789747847669073663661555547.png" alt="" loading="lazy"></div></div><br />
+'@
 	}
 	if ($purl -eq "avispish") {
 		$raw = $raw -replace '<h2>What does it mean to exist in a world where every gesture can be turned into data\?', '<h2 class="deformed">What does it mean to exist in a world where every gesture can be turned into data?'

@@ -60,6 +60,7 @@ $homeCategories = @(
 		@{ title = "Fluido.obj"; href = "fluido-obj"; medium = "VR Installation"; year = "2019/2023"; img = "assets/media/F2293533828824032594223013936987.jpeg"; desc = "A VR installation centred on perception; nostalgia as a vibe, exploring futuristic landscapes of memory." }
 	)},
 	@{ name = "A/V Performance"; items = @(
+		@{ title = "El origen del Huevo"; href = "origen-del-huevo"; medium = "A/V Live"; year = "2026"; img = "assets/img/oh-paz-02.jpg"; desc = "A live A/V piece with QOA where a game engine becomes an instrument: Joaquina plays a videogame in real time while the game state drives sound and image as one gesture." },
 		@{ title = "Deriva"; href = "deriva"; medium = "Performance"; year = "2023"; img = "assets/media/6274af2b2992db5bc7cef5059800ce4d7d03409b24810aa4862ea4efaa55179b.jpg"; desc = "An audiovisual performance exploring the forms within a virtual organism, modulated in real time through motion capture." },
 		@{ title = "God Milk"; href = "god-milk"; medium = "Performance"; year = "2024"; img = "assets/media/C2293443625555230983748989861723.jpg"; desc = "A performance and audio-visual installation set in a milk factory, on the care economy and the gamification of female bodies." },
 		@{ title = "Water Nodes"; href = "water-nodes"; medium = "Motion Capture Performance"; year = "2022"; img = "assets/media/Y2293547360636062048675406921563.png"; desc = "A motion-capture performance built on the idea that water is memory, streaming live mocap across remote locations." }
@@ -702,7 +703,7 @@ Working with memory means accepting that it is not something fixed. Every time w
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce14.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce15.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce05.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce09.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce17.jpg" alt="Cyber Eternity" loading="lazy"></div></div>
-<div class="ce-credits">
+<div class="proj-credits">
 <div class="cc-row"><span class="cc-label">Photography</span> Cande Etche</div>
 <div class="cc-row"><span class="cc-label">Production</span> <a href="https://nitelite.studio/" target="_blank" rel="noopener">Nite Lite Studio <span class="text-icon">&#8599;</span></a></div>
 <div class="cc-row"><span class="cc-label">Related press</span> <a href="https://koerber-stiftung.de/projekte/ecommemoration/every-time-we-remember-we-remember-differently-interview-with-joaquina-salgado/" target="_blank" rel="noopener">K&ouml;rber-Stiftung &mdash; Every time we remember, we remember differently <span class="text-icon">&#8599;</span></a></div>
@@ -711,6 +712,37 @@ Working with memory means accepting that it is not something fixed. Every time w
 $ceTitle = "Cyber Eternity " + [char]0x2014 + " Joaquina Salgado"
 Write-File (Join-Path $base "cyber-eternity.html") (Build-ContentPage $ceTitle "cyber-eternity" $ceContent)
 Write-Host "  cyber-eternity.html"
+
+# --------------------------------------------------------------------------
+# El origen del Huevo — hand-authored A/V live page (with QOA, Performa 2026)
+# Photos: Paz Olivares Droguett & Francisca Kika Gonz&aacute;lez
+# --------------------------------------------------------------------------
+$ohContent = @'
+<section class="oms-home" id="oms-home"><div class="mw-photo" aria-hidden="true"></div><canvas class="mw-heat" id="mw-heat" aria-hidden="true"></canvas><div class="mw-inner"><h1 class="mw-title">El origen del Huevo</h1><div class="mw-tags"><span>A/V Live</span><span>2026</span></div></div></section>
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/oh-paz-02.jpg" alt="El origen del Huevo" loading="lazy"><small><span class="caption" style="--font-scale: 0.6;">Photo: Paz Olivares Droguett</span></small></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+<i>El live parte de una pregunta: &iquest;qu&eacute; pasa cuando una m&aacute;quina de juego se vuelve instrumento, cuando el c&oacute;digo funciona como partitura compartida?</i>
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+En escena, QOA trabaja con s&iacute;ntesis, grabaciones de campo y live sampling, mientras Joaquina opera un videojuego en tiempo real, disparando sonidos y construyendo im&aacute;genes a medida que juega. Su trabajo conjunto desde el 2020 &mdash;con experimentaci&oacute;n en distintos formatos, performance A/V e instalaciones&mdash; lleva esa colaboraci&oacute;n a un terreno donde las dos pr&aacute;cticas se co-componen: el juego genera la m&uacute;sica y la imagen provoca el sonido en un mismo gesto.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/oh-fk-04.jpg" alt="El origen del Huevo" loading="lazy"><small><span class="caption" style="--font-scale: 0.6;">Photo: Francisca Kika Gonz&aacute;lez</span></small></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/oh-paz-01.jpg" alt="El origen del Huevo" loading="lazy"><small><span class="caption" style="--font-scale: 0.6;">Photo: Paz Olivares Droguett</span></small></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+Es una historia realmente no-lineal, un queering del espacio-tiempo donde la decisi&oacute;n de c&oacute;mo acontece el relato y qu&eacute; recorrido toma sucede en vivo. La arquitectura del juego es lo que lo habilita: un mundo que se navega y se rearma a medida que se juega, con caminos que se abren seg&uacute;n la decisi&oacute;n del momento. El control se vuelve instrumento y el motor de juego, una superficie de composici&oacute;n. Los mismos eventos que abren un paso en el mundo disparan y modulan el sonido, de modo que el estado del juego funciona como partitura viva.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/oh-fk-03.jpg" alt="El origen del Huevo" loading="lazy"><small><span class="caption" style="--font-scale: 0.6;">Photo: Francisca Kika Gonz&aacute;lez</span></small></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/oh-fk-02.jpg" alt="El origen del Huevo" loading="lazy"><small><span class="caption" style="--font-scale: 0.6;">Photo: Francisca Kika Gonz&aacute;lez</span></small></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/oh-paz-03.jpg" alt="El origen del Huevo" loading="lazy"><small><span class="caption" style="--font-scale: 0.6;">Photo: Paz Olivares Droguett</span></small></div></div>
+<div class="proj-credits">
+<div class="cc-row"><span class="cc-label">Presented at</span> <a href="https://www.mediales.art/articulos/performa-2026" target="_blank" rel="noopener">Festival Performa</a> &mdash; Valpara&iacute;so, Chile. October 2026.</div>
+<div class="cc-row"><span class="cc-label">Live</span> QOA &amp; Joaquina Salgado</div>
+<div class="cc-row"><span class="cc-label">Curated by</span> <a href="https://13.bienaldeartesmediales.cl/participante/valentina-montero-2" target="_blank" rel="noopener">Valentina Montero <span class="text-icon">&#8599;</span></a></div>
+<div class="cc-row"><span class="cc-label">Production &amp; stage design</span> <a href="https://hub-creativo.cl" target="_blank" rel="noopener">Hub Creativo <span class="text-icon">&#8599;</span></a></div>
+<div class="cc-row"><span class="cc-label">Photography</span> Paz Olivares Droguett &amp; Francisca Kika Gonz&aacute;lez</div>
+</div>
+'@
+$ohTitle = "El origen del Huevo " + [char]0x2014 + " Joaquina Salgado"
+Write-File (Join-Path $base "origen-del-huevo.html") (Build-ContentPage $ohTitle "origen-del-huevo" $ohContent)
+Write-Host "  origen-del-huevo.html"
 
 # favicon
 Register-Asset "https://freight.cargo.site/t/original/i/H2297683048899553283417558335323/eyealpha.ico" "favicon.ico" | Out-Null

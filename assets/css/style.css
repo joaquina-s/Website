@@ -868,6 +868,7 @@ html:has(body.home)::-webkit-scrollbar { width: 0; height: 0; display: none; }
 
 /* ---- Cyber Eternity ---- */
 .page-cyber-eternity .mw-photo { background-image: url("../img/ce11.jpg"); }
+.page-origen-del-huevo .mw-photo { background-image: url("../img/oh-fk-01.jpg"); }
 .ce-games { margin: 3.6rem 0 1.4rem; }
 .ce-games-head {
 	text-transform: uppercase;
@@ -879,15 +880,15 @@ html:has(body.home)::-webkit-scrollbar { width: 0; height: 0; display: none; }
 }
 .ce-games-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; width: 100%; }
 .ce-games-grid .metal-link-card { max-width: none; margin: 0; }
-.ce-credits {
+.proj-credits {
 	margin: 3.4rem 0 1rem;
 	padding-top: 1.8rem;
 	border-top: 1px solid rgba(127, 127, 127, 0.28);
 	font-size: 1.2rem;
 	line-height: 1.7;
 }
-.ce-credits .cc-row { margin-bottom: 0.45rem; }
-.ce-credits .cc-label {
+.proj-credits .cc-row { margin-bottom: 0.45rem; }
+.proj-credits .cc-label {
 	display: inline-block;
 	min-width: 8.5rem;
 	text-transform: uppercase;
@@ -895,11 +896,11 @@ html:has(body.home)::-webkit-scrollbar { width: 0; height: 0; display: none; }
 	font-size: 0.78em;
 	opacity: 0.6;
 }
-.ce-credits a { color: var(--accent-nav); text-decoration: none; }
-.ce-credits a:hover { text-decoration: underline; }
+.proj-credits a { color: var(--accent-nav); text-decoration: none; }
+.proj-credits a:hover { text-decoration: underline; }
 @media (max-width: 680px) {
 	.ce-games-grid { grid-template-columns: 1fr; }
-	.ce-credits .cc-label { display: block; min-width: 0; margin-bottom: 0.1rem; }
+	.proj-credits .cc-label { display: block; min-width: 0; margin-bottom: 0.1rem; }
 }
 
 /* ---- About page: bio + metallic accordions ---- */

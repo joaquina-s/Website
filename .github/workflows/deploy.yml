@@ -16,10 +16,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Build job: package the repo root as the Pages artifact.
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,10 +32,23 @@ jobs:
           # The site is plain static HTML at the repo root — no build step needed.
           path: '.'
 
+  # Deploy job: a separate job (needs: build) so the artifact is fully
+  # registered before deploy-pages queries its metadata. This avoids the
+  # intermittent "No artifacts named github-pages were found / Found 0
+  # artifact(s)" race that a single upload+deploy job hits on this heavy
+  # (~300 MB) site.
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          # the site carries ~500 MB of media, so give Pages longer to sync
-          timeout: 1800000
+          # 600000 ms is the action's allowed maximum; the media payload is
+          # large, so give Pages the full window to sync.
+          timeout: 600000
           error_count: 25

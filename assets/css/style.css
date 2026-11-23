@@ -866,6 +866,42 @@ html:has(body.home)::-webkit-scrollbar { width: 0; height: 0; display: none; }
 .ar-text ul { margin: 1.2rem 0; }
 .ar-text li { margin-bottom: 0.3rem; }
 
+/* ---- Cyber Eternity ---- */
+.page-cyber-eternity .mw-photo { background-image: url("../img/ce11.jpg"); }
+.ce-games { margin: 3.6rem 0 1.4rem; }
+.ce-games-head {
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 0 0 1.4rem;
+	opacity: 0.85;
+}
+.ce-games-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; width: 100%; }
+.ce-games-grid .metal-link-card { max-width: none; margin: 0; }
+.ce-credits {
+	margin: 3.4rem 0 1rem;
+	padding-top: 1.8rem;
+	border-top: 1px solid rgba(127, 127, 127, 0.28);
+	font-size: 1.2rem;
+	line-height: 1.7;
+}
+.ce-credits .cc-row { margin-bottom: 0.45rem; }
+.ce-credits .cc-label {
+	display: inline-block;
+	min-width: 8.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 0.78em;
+	opacity: 0.6;
+}
+.ce-credits a { color: var(--accent-nav); text-decoration: none; }
+.ce-credits a:hover { text-decoration: underline; }
+@media (max-width: 680px) {
+	.ce-games-grid { grid-template-columns: 1fr; }
+	.ce-credits .cc-label { display: block; min-width: 0; margin-bottom: 0.1rem; }
+}
+
 /* ---- About page: bio + metallic accordions ---- */
 .about-body { max-width: 66rem; margin: 0 auto; }
 .about-bio { font-size: 1.6rem; line-height: 1.62; color: var(--ink-soft); margin: 0 0 2.8rem; }

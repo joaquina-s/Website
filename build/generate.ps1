@@ -55,6 +55,7 @@ $homeCategories = @(
 	)},
 	@{ name = "Installations"; items = @(
 		@{ title = "Avispish"; href = "avispish"; medium = "Installation"; year = "2023/2025"; img = "assets/media/fa455474f99d9a7fc8fd10c50c883a3f2d51361e7bc58f3cea6392dba974273d.jpg"; desc = "A multi-screen artwork of animated facial captures, a narrative of fragmented conversations on surveillance and power." },
+		@{ title = "Cyber Eternity"; href = "cyber-eternity"; medium = "Installation"; year = "2026"; img = "assets/img/ce01.jpg"; desc = "Art games staged inside Eternity, a 24-hour cyber caf&eacute; in Buenos Aires &mdash; internet nostalgia as a space to play with memory." },
 		@{ title = "Hidrontes"; href = "hidrontes"; medium = "Installation"; year = "2022"; img = "assets/media/f228c0f645199df532a4c2d251b019df70a945fc0ab5a974bbb9ff2fab5de699.jpg"; desc = "Speculative fiction where aquatic beings arrive on dry land to rehearse composting and care in potential futures." },
 		@{ title = "Fluido.obj"; href = "fluido-obj"; medium = "VR Installation"; year = "2019/2023"; img = "assets/media/F2293533828824032594223013936987.jpeg"; desc = "A VR installation centred on perception; nostalgia as a vibe, exploring futuristic landscapes of memory." }
 	)},
@@ -650,6 +651,66 @@ When I put a lot of time and effort into these applications and get these soulle
 $arTitle = "Artist Rejector " + [char]0x2014 + " Joaquina Salgado"
 Write-File (Join-Path $base "artist-rejector.html") (Build-ContentPage $arTitle "artist-rejector" $arContent)
 Write-Host "  artist-rejector.html"
+
+# --------------------------------------------------------------------------
+# Cyber Eternity — hand-authored installation page (photos by Cande Etche)
+# --------------------------------------------------------------------------
+$ceContent = @'
+<section class="oms-home" id="oms-home"><div class="mw-photo" aria-hidden="true"></div><canvas class="mw-heat" id="mw-heat" aria-hidden="true"></canvas><div class="mw-inner"><h1 class="mw-title">Cyber Eternity</h1><div class="mw-tags"><span>Installation</span><span>2026</span></div></div></section>
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce01.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+Cyber caf&eacute;s were one of the foundations of early internet culture, and they appeared almost everywhere at once, translating the universal network into the culture of every country.<br />
+<br />
+In Latin America, cyber caf&eacute; culture shaped the sensibility of a generation and set the tone for our relationship with the internet itself. In this place, consciousness seemed capable of extraordinary forms of life, blending our minds so strongly that a synthetic common sense began to take shape.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce02.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce03.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+Eternity, in this context, echoes the collective dream of a planetary consciousness, of union. Back then, we did not suspect that we would become increasingly withdrawn from social life, spending our nights and days with systems that seem to know more about us than we know about ourselves.<br />
+<br />
+Perhaps that is where this feeling of internet nostalgia begins to form. In nostalgia we find the fundamental tension of the project: the internet promised a life beyond physical space, yet it transformed space as we know it, reorganizing every aspect of our lives. Until we arrived where we are now, surrounded by dead machines and dead ways of thinking.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce06.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce07.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+This encapsulated space gradually took over the rest of how our lives are organized, until everything became so absorbed by it that the very idea of &#8220;elsewhere&#8221; became impossible to conceive.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce16.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1.4rem;"><div class="column-unit" style="--span:6">
+<i>Cyber Eternity</i> is an installation project that takes this space as its starting point to present art games by Joaquina Salgado. It takes its name from Eternity, a cyber caf&eacute; at Monta&ntilde;eses 2066 in Buenos Aires, open twenty-four hours a day for more than twenty years, where the project was first presented in October 2026.
+</div><div class="column-unit" style="--span:4"><img class="media-item zoomable" src="assets/img/ce04.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+Old technological worlds resurface through nostalgic movements, and internet caf&eacute;s have somehow managed to withstand the passage of time, probably because they bring people together instead of setting them apart.<br />
+<br />
+In recent years, contemporary art has been making an effort to include video games in galleries and museums. But the truth is they didn&#8217;t originate in galleries. Going back to an internet caf&eacute;, inviting people in and letting them play feels like reconnecting with the core of the work.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce12.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce13.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+Every game presented in this installation offers a different POV on working with memory, turning our memories into worlds that others can explore.
+</div></div>
+<div class="ce-games">
+<h2 class="ce-games-head">Games presented</h2>
+<div class="ce-games-grid">
+<a class="metal-link-card" href="one-more-sim.html"><span class="mlc-body"><span class="mlc-title">One More Sim</span><span class="mlc-url">View project &#8594;</span></span></a>
+<a class="metal-link-card" href="nitef.html"><span class="mlc-body"><span class="mlc-title">Nostalgia is the Extended Feedback</span><span class="mlc-url">View project &#8594;</span></span></a>
+<a class="metal-link-card" href="to-the-best-of-our-knowledge.html"><span class="mlc-body"><span class="mlc-title">To the Best of Our Knowledge</span><span class="mlc-url">View project &#8594;</span></span></a>
+<a class="metal-link-card" href="artist-rejector.html"><span class="mlc-body"><span class="mlc-title">Artist Rejector</span><span class="mlc-url">View project &#8594;</span></span></a>
+</div>
+</div>
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce08.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce10.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit">
+Working with memory means accepting that it is not something fixed. Every time we remember something, we remember it differently, and through new experiences we keep reconstructing the past and the story we tell ourselves about what happened. That reconstruction shapes how we act in the present, which is why memory is always in dialogue with imagination and creativity. This work approaches remembering as an active process, something we are participating in all the time. In this sense, internet caf&eacute;s are the perfect context to develop this project.
+</div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce14.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce15.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce05.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce09.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce17.jpg" alt="Cyber Eternity" loading="lazy"></div></div>
+<div class="ce-credits">
+<div class="cc-row"><span class="cc-label">Photography</span> Cande Etche</div>
+<div class="cc-row"><span class="cc-label">Production</span> <a href="https://nitelite.studio/" target="_blank" rel="noopener">Nite Lite Studio <span class="text-icon">&#8599;</span></a></div>
+<div class="cc-row"><span class="cc-label">Related press</span> <a href="https://koerber-stiftung.de/projekte/ecommemoration/every-time-we-remember-we-remember-differently-interview-with-joaquina-salgado/" target="_blank" rel="noopener">K&ouml;rber-Stiftung &mdash; Every time we remember, we remember differently <span class="text-icon">&#8599;</span></a></div>
+</div>
+'@
+$ceTitle = "Cyber Eternity " + [char]0x2014 + " Joaquina Salgado"
+Write-File (Join-Path $base "cyber-eternity.html") (Build-ContentPage $ceTitle "cyber-eternity" $ceContent)
+Write-Host "  cyber-eternity.html"
 
 # favicon
 Register-Asset "https://freight.cargo.site/t/original/i/H2297683048899553283417558335323/eyealpha.ico" "favicon.ico" | Out-Null

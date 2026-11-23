@@ -659,13 +659,12 @@ Write-Host "  artist-rejector.html"
 $ceContent = @'
 <section class="oms-home" id="oms-home"><div class="mw-photo" aria-hidden="true"></div><canvas class="mw-heat" id="mw-heat" aria-hidden="true"></canvas><div class="mw-inner"><h1 class="mw-title">Cyber Eternity</h1><div class="mw-tags"><span>Installation</span><span>2026</span></div></div></section>
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce01.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
-<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><video autoplay="" class="embed-video" loop="" muted="" playsinline="" src="assets/media/fpv.mp4" style="width: 100%; height: auto; display: block;"></video></div></div><br /><br />
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit">
 Cyber caf&eacute;s were one of the foundations of early internet culture, and they appeared almost everywhere at once, translating the universal network into the culture of every country.<br />
 <br />
 In Latin America, cyber caf&eacute; culture shaped the sensibility of a generation and set the tone for our relationship with the internet itself. In this place, consciousness seemed capable of extraordinary forms of life, blending our minds so strongly that a synthetic common sense began to take shape.
 </div></div><br /><br />
-<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce02.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce03.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><video controls="" class="embed-video" playsinline="" preload="metadata" src="assets/media/fpv.mp4" style="width: 100%; height: auto; display: block;"></video></div></div><br /><br />
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit">
 Eternity, in this context, echoes the collective dream of a planetary consciousness, of union. Back then, we did not suspect that we would become increasingly withdrawn from social life, spending our nights and days with systems that seem to know more about us than we know about ourselves.<br />
 <br />
@@ -702,6 +701,7 @@ Every game presented in this installation offers a different POV on working with
 Working with memory means accepting that it is not something fixed. Every time we remember something, we remember it differently, and through new experiences we keep reconstructing the past and the story we tell ourselves about what happened. That reconstruction shapes how we act in the present, which is why memory is always in dialogue with imagination and creativity. This work approaches remembering as an active process, something we are participating in all the time. In this sense, internet caf&eacute;s are the perfect context to develop this project.
 </div></div><br /><br />
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce14.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce15.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
+<div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce02.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce03.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce05.jpg" alt="Cyber Eternity" loading="lazy"></div><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce09.jpg" alt="Cyber Eternity" loading="lazy"></div></div><br /><br />
 <div class="column-set" style="--gutter:1rem;"><div class="column-unit"><img class="media-item zoomable" src="assets/img/ce17.jpg" alt="Cyber Eternity" loading="lazy"></div></div>
 <div class="proj-credits">

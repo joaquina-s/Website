@@ -867,8 +867,8 @@ html:has(body.home)::-webkit-scrollbar { width: 0; height: 0; display: none; }
 .ar-text li { margin-bottom: 0.3rem; }
 
 /* ---- Cyber Eternity ---- */
-.page-cyber-eternity .mw-photo { background-image: url("../img/ce11.jpg"); }
-.page-origen-del-huevo .mw-photo { background-image: url("../img/oh-fk-01.jpg"); }
+/* Hero keeps the site-wide default .mw-photo background (studyingMyPain.png),
+   same heat-reveal image as every other project — no per-page override. */
 .ce-games { margin: 3.6rem 0 1.4rem; }
 .ce-games-head {
 	text-transform: uppercase;
